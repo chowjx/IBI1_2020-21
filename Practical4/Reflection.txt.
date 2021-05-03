@@ -1,2 +1,6 @@
-I learned to fork an existing repository.
-I learned to create a repository of my own.
+I learned to fork an existing repository in github.
+I learned to clone a git repository onto my computer by typing "git clone" + URL in terminal.
+I successfully added a file on github using "git add" + file name in terminal.
+I successfully commited changes and include a commit message by typing " git commit - m "" ", where the commit message is written inside the "" in terminal.
+I learned to move local changes back to github by typing "git push origin master.
+I successfully made a website on github that can be accessed by typing "chowjx.github.io" in the browswer. 
