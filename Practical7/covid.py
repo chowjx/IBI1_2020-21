@@ -11,3 +11,5 @@ covid_data = pd.read_csv("full_data.csv")
 print(covid_data)
 print(covid_data.head(5))
 covid_data.info()
+print(covid_data.describe())
+
