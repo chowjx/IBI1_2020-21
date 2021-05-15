@@ -17,8 +17,16 @@ print(covid_data.head(5)) # Get first 5 rows of covid_data dataframe
 covid_data.info() # Get info of data type of data points in covid_data
 print(covid_data.describe()) # Get summary statistics of covid_data dataframe
 
-print(covid_data.iloc[0,1]) # Get data in row 0, column 1 by row & column number
-print(covid_data.iloc[2,0:5]) # Get data in row 2, from columns 0 to 5
-print(covid_data.iloc[0:2,:]) # Get data from row 0 to 2 & all columns
+print(covid_data.iloc[0,1]) # Get data from 1st row, 2nd column by row & column index
+print(covid_data.iloc[2,0:5]) # Get data from 3rd row, from columns 0 to 5
+print(covid_data.iloc[0:2,:]) # Get data from first 2 rows & all columns
 print(covid_data.iloc[0:10:2,0:5]) # Get data from every second row between & including 0 & 8, & from columns 0 to 5
-print(covid_data.iloc[0:12:2,:]) # Get data from every seconf row between & including 0 & 10, & from all columns
+print(covid_data.iloc[0:12:2,:]) # Get data from every second row between & including 0 & 10, & from all columns
+
+
+print(covid_data.iloc[0:3,[0,1,3]])
+# Get data from first 3 rows but only the 1st, 2nd & 4th columns, below using Boolean
+my_columns = [True, True, False, True, False, False]
+print(covid_data.iloc[0:3, my_columns])
+
+print(covid_data.loc[2:4,"date"])
