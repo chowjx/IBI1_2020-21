@@ -7,8 +7,9 @@ average_exon_length.sort()
 print('sorted average exon length:', average_exon_length)
 
 import matplotlib.pyplot as plt
-plt.boxplot(average_exon_length)
+plt.boxplot(average_exon_length) # Plot boxplot displaying the distribution of average exon length
 plt.ylabel('Average Exon Length')
+plt.xlabel('Gene')
 plt.show()
 
 
