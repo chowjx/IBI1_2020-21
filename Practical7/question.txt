@@ -1,1 +1,11 @@
-
+Question: Plot a boxplot of total case numbers in different countries (excluding World) on 14 March 2020
+Answer: From line number 64 to 70 in covid.py file
+Results Discussion: 
+From the boxplot (excluding outliers), it is shown that the maximum total cases is approximately 317; 
+the minimum total cases is approximately 1; the mean is approximately 38; 
+the lower quartile is approximately 11; the upper quartile is approximately 160;
+the interquartile range is approximately 149. 
+The data is positively skewed. 
+The outliers were excluded because they are extreme outliers that lie more than 3 times the interquartile range above the upper quartile,
+these can affect the mean of the data set so much by skewing the results so that the mean is no longer representative of the data set.
+Overall, this boxplot was not a suitable representative of the entire data set.
