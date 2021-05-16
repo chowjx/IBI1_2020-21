@@ -45,3 +45,7 @@ new_cases_world = covid_data.loc[covid_data['location'] == 'World',['new_cases']
 print(new_cases_world) 
 print(np.mean(new_cases_world)) # Get mean of new cases from World
 print(np.median(new_cases_world)) # Get median of new cases from World
+
+# Plot new cases around the world as a box plot
+new_cases_world.boxplot(column = 'new_cases')
+plt.show()
