@@ -47,7 +47,7 @@ print('world mean', np.mean(new_cases_world)) # Get mean of new cases from World
 print('world median new cases', np.median(new_cases_world)) # Get median of new cases from World
 
 # Plot new cases around the world as a box plot
-new_cases_world.boxplot()
+new_cases_world.boxplot(showfliers = False)
 plt.title('New Covid Cases Worldwide')
 plt.ylabel('Number of cases')
 plt.show()
@@ -59,4 +59,12 @@ plt.title('New cases & new deaths worldwide')
 plt.ylabel('Number of cases/deaths')
 plt.xlabel('Row index in dataframe')
 plt.legend(["new cases", "new deaths"], loc='upper left')
+plt.show()
+
+#Plot boxplot of total cases in different countries (excluding World) on 14 March 2020
+diff_total_cases = covid_data.loc[(covid_data['date'] == '2020-03-14') & (covid_data['location'] != 'World'), ['date','location','total_cases']]
+print(diff_total_cases)
+diff_total_cases.boxplot(showfliers = False)
+plt.title('Total covid cases in different countries (excluding World) on 14 March 2020')
+plt.ylabel('Number of cases')
 plt.show()
