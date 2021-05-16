@@ -36,3 +36,6 @@ print(covid_data.loc[0:81,"total_cases"]) # Get data from row 0 to 81 & column n
 # Get total cases from Afghanistan only (same output asc ovid_data.loc[0:81,"total_cases"])
 print(covid_data.loc[covid_data['location'] == 'Afghanistan','total_cases'])
 
+# Get date & new cases from World only
+world_new_cases = covid_data.loc[covid_data['location'] == 'World',['date','new_cases']]
+print(world_new_cases)
