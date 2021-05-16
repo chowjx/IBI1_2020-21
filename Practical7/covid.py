@@ -43,9 +43,20 @@ print(world_new_cases)
 # Get new cases from World only
 new_cases_world = covid_data.loc[covid_data['location'] == 'World',['new_cases']]
 print(new_cases_world) 
-print(np.mean(new_cases_world)) # Get mean of new cases from World
-print(np.median(new_cases_world)) # Get median of new cases from World
+print('world mean', np.mean(new_cases_world)) # Get mean of new cases from World
+print('world median new cases', np.median(new_cases_world)) # Get median of new cases from World
 
 # Plot new cases around the world as a box plot
-new_cases_world.boxplot(column = 'new_cases')
+new_cases_world.boxplot()
+plt.title('New Covid Cases Worldwide')
+plt.ylabel('Number of cases')
+plt.show()
+
+# Plot graph for new cases & new deaths worldwide
+world_new_deathsncases = covid_data.loc[covid_data['location'] == 'World',['new_cases','new_deaths']]
+plt.plot(world_new_deathsncases)
+plt.title('New cases & new deaths worldwide')
+plt.ylabel('Number of cases/deaths')
+plt.xlabel('Row index in dataframe')
+plt.legend(["new cases", "new deaths"], loc='upper left')
 plt.show()
