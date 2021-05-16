@@ -39,3 +39,9 @@ print(covid_data.loc[covid_data['location'] == 'Afghanistan','total_cases'])
 # Get date & new cases from World only
 world_new_cases = covid_data.loc[covid_data['location'] == 'World',['date','new_cases']]
 print(world_new_cases)
+
+# Get new cases from World only
+new_cases_world = covid_data.loc[covid_data['location'] == 'World',['new_cases']]
+print(new_cases_world) 
+print(np.mean(new_cases_world)) # Get mean of new cases from World
+print(np.median(new_cases_world)) # Get median of new cases from World
