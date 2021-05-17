@@ -21,4 +21,6 @@ codon_table = {
         'TAC':'Y', 'TAT':'Y', 'TAA':'O', 'TAG':'U',
         'TGC':'C', 'TGT':'C', 'TGA':'X', 'TGG':'W',
         }
-        
+# create a list for protein
+protein = ''
+
