@@ -8,4 +8,4 @@ print(os.getcwd())
 print(os.listdir())
 
 allcdna = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa') # Open & read fasta file
-
+output = open('unknown_function.fa', 'w') # Create a fasta file to write output in it
