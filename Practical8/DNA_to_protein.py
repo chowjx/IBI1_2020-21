@@ -3,7 +3,6 @@ seq = 'ATGCGACTACGATCGAGGGCC'
 
 # import codon table
 codon_table = {
-        
         'ATA':'J', 'ATC':'I', 'ATT':'I', 'ATG':'M',
         'ACA':'T', 'ACC':'T', 'ACG':'T', 'ACT':'T',
         'AAC':'B', 'AAT':'N', 'AAA':'K', 'AAG':'K',
