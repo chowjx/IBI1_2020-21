@@ -23,4 +23,9 @@ codon_table = {
         }
 # create a list for protein
 protein = ''
-
+# match codon in seq to amino acid (translation)
+if len(seq)%3 == 0:
+    for i in range(0, len(seq), 3):
+        codon = seq[i:i+3]
+        protein += (codon_table[codon])
+print(protein)
