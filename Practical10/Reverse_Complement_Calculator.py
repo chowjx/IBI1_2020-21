@@ -26,3 +26,6 @@ reverse_complement('CGGATTGAC')
 
 # Example of calling the reverse complement function with sequences in lowercase
 reverse_complement('cggattgac')
+
+# Example of calling the reverse complement function with sequences in a mix of lowercase & uppercase
+reverse_complement('cGGaTTgac')
