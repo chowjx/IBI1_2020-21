@@ -6,3 +6,6 @@ import re
 os.chdir("/Users/chowjx/Downloads")
 print(os.getcwd())
 print(os.listdir())
+
+allcdna = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa') # Open & read fasta file
+
