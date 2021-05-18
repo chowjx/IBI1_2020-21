@@ -2,10 +2,6 @@
 import os
 import re 
 
-# Perform os functions to change directory & print current working directory
-os.chdir("/Users/chowjx/Downloads")
-print(os.getcwd())
-
 allcdna = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa') # Open & read fasta file
 lines = allcdna.readlines()     # get the data from the allcdna fasta file
 
