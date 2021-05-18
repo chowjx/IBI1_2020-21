@@ -20,13 +20,11 @@ X = False # Make boolean variable X
 Y = True # Make boolean variable Y
 Z = (X and not Y) or (Y and not X)
 print(Z)
-
 # Output return 'True'
 
 W = X != Y
 if W == Z:
     print(W == Z)
-
 # Output return 'True'
 
 # verify Z as true if either X or Y (but not both) are true
@@ -34,9 +32,10 @@ X = True # Make boolean variable X
 Y = True # Make boolean variable Y
 Z = (X and not Y) or (Y and not X)
 print(Z)
-
 # Output return 'False'
+
 # verify that W and Z are always the same, no matter the values of X and Y
 W = X != Y
 if W == Z:
     print(W == Z)
+# Output return 'True'
