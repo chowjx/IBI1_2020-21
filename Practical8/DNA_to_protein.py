@@ -1,8 +1,7 @@
-# import DNA sequence
-seq = 'ATGCGACTACGATCGAGGGCC'
-
-# import codon table
-codon_table = {
+# create a function to translate DNA sequences to amino acids
+def translate(seq):
+    # import codon table
+    codon_table = {
         'ATA':'J', 'ATC':'I', 'ATT':'I', 'ATG':'M',
         'ACA':'T', 'ACC':'T', 'ACG':'T', 'ACT':'T',
         'AAC':'B', 'AAT':'N', 'AAA':'K', 'AAG':'K',
@@ -20,11 +19,15 @@ codon_table = {
         'TAC':'Y', 'TAT':'Y', 'TAA':'O', 'TAG':'U',
         'TGC':'C', 'TGT':'C', 'TGA':'X', 'TGG':'W',
         }
-# create a list for protein
-protein = ''
-# match codon in seq to amino acid (translation)
-if len(seq)%3 == 0:
-    for i in range(0, len(seq), 3):
-        codon = seq[i:i+3]
-        protein += (codon_table[codon])
-print(protein)
+    # create a list for protein
+    protein = ''
+    # match codon in seq to amino acid (translation)
+    if len(seq)%3 == 0: # to ensure codons are 3-letter long
+        for i in range(0, len(seq), 3):
+            codon = seq[i:i+3]
+            protein += (codon_table[codon])
+        return protein
+
+# import DNA sequence
+seq = 'ATGCGACTACGATCGAGGGCC'
+print(translate(seq))
