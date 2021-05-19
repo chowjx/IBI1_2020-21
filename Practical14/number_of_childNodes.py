@@ -55,7 +55,7 @@ print("the number of childNodes for each RNA-related gene ontology term: " + str
 print("the number of childNodes for each protein-related gene ontology term: " + str(protein))
 print("the number of childNodes for each glycoprotein-related gene ontology term: " + str(glycoprotein))
 
-# To make the pie chart
+# Construct pie chart using matplotlib
 molecules = {"DNA": DNA, "RNA": RNA,
              "Protein": protein, "Glycoprotein": glycoprotein}
 labels = molecules.keys()

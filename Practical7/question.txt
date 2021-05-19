@@ -1,5 +1,5 @@
 Question: Plot a boxplot of total case numbers in different countries (excluding World) on 14 March 2020
-Answer: From line number 64 to 70 in covid.py file
+Answer: From line number 59 to 65 in covid.py file
 Results Discussion: 
 From the boxplot (excluding outliers), it is shown that the maximum total cases is approximately 317; 
 the minimum total cases is approximately 1; the mean is approximately 38; 
