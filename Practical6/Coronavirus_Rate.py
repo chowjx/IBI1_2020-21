@@ -10,4 +10,5 @@ values = list(Coronavirus_Rate.values())
 # Construct Pie Chart for Coronavirus_Rate using matplotlib
 import matplotlib.pyplot as plt
 plt.pie(values, labels=labels, autopct=lambda p:f'{p:.2f}%, \n {p*sum(values)/100 :.0f} cases')
+plt.title('Total number of Covid-19 cases in 5 different countries')
 plt.show()
