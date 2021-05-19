@@ -1,3 +1,4 @@
+# Import DOM, matplotlib, numpy modules
 from xml.dom.minidom import parse
 import xml.dom.minidom
 import matplotlib.pyplot as plt
@@ -8,7 +9,7 @@ DOMTree = xml.dom.minidom.parse("go_obo.xml")
 collection = DOMTree.documentElement
 terms = collection.getElementsByTagName("term")
 
-# Find the row containing <defstr> & confirm the type of molecule described in that row.
+# Function to find the row containing <defstr> & confirm the type of molecule described in that row.
 def check_molecule(terms, molecule):
     check_list = []
     for term in terms:
@@ -18,6 +19,7 @@ def check_molecule(terms, molecule):
             check_list.append(term)
     return check_list
 
+# Function to get the childNodes
 def get_childNodes(term_id, ids):
     allChildren = []
     for element in ids:
@@ -34,6 +36,7 @@ def get_childNodes(term_id, ids):
             allChildren += get_childNodes(term_id, children)
     return allChildren
 
+# Function to count the number of childNodes
 def count_childNodes(terms, molecule):
     term_id_dict = {}
     for term in terms:
@@ -43,7 +46,7 @@ def count_childNodes(terms, molecule):
     count = len(get_childNodes(term_id_dict, match_list)) - len(match_list)
     return count
 
-# Run the function to get the result for output
+# Run the function (count_childNodes) to get the result for DNA, RNA, protein & glycoprotein
 DNA = count_childNodes(terms, "DNA")
 RNA = count_childNodes(terms, "RNA")
 protein = count_childNodes(terms, "protein")
