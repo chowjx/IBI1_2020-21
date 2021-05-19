@@ -58,7 +58,8 @@ print('percentage of identical amino acids = ' + str(m_r_percentage) + '%')
 # The regions of matching amino acids in both human & mouse sequences are more likely to be functionally important for the protein as
 # they are more likely to be a signature of evolutionary constraint between the two sequences which are preserved during evolution.
 # The high percentage identity between the human & mouse sequences may suggest why mouse are often used as animal models in research, 
-# for example: human diseases can be mimicked in mouse to carry out drug-testing; in gene therapy, find potential therapeutic targets for treatment in humans through manipulation of the matches or mismatches in mouse sequence.
+# for example: human diseases can be mimicked in mouse to carry out drug-testing; in gene therapy, 
+# find potential therapeutic targets for treatment in humans through manipulation of the matches or mismatches in mouse sequence.
 # The number of mismatches in both human & mouse when align with the random sequence is almost the same, with 210 and 209 mismatches respectively.
 # This means that the random sequence is very distant from both human and mouse sequence and they are hardly or not at all related, with different functions.
 
