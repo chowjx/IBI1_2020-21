@@ -4,6 +4,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Perform os functions to change directory to the one where the full_data.csv file is stored
+os.chdir("/Users/chowjx/Downloads")
+
 # Read full_data.csv file into a dataframe object named covid_data via pandas
 covid_data = pd.read_csv("full_data.csv")
 
